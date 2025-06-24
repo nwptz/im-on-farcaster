@@ -31,7 +31,7 @@ export default function Home() {
         <NeynarAuthButton label="Connect Farcaster" />
       ) : (
         <>
-          <p>Hello, {user.displayName || user.fid} 👋</p>
+          <p>Hello, {user.display_name || user.fid} 👋</p>
           <p>🔥 Current streak: {streak} day(s)</p>
           <button onClick={handleCheckIn}>✅ Check In</button>
         </>
